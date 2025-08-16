@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Page de sécurité</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at center, #e0f7fa, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      animation: bodyFadeIn 2s ease-in-out;
+    }
+
+    @keyframes bodyFadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px;
+      max-width: 800px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+      animation: containerZoom 1.5s ease-out;
+    }
+
+    @keyframes containerZoom {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    h1, h2 {
+      color: #00796b;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    h1:hover, h2:hover {
+      transform: scale(1.05);
+      color: #004d40;
+    }
+
+    p {
+      margin: 15px 0;
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 12px 0;
+    }
+
+    a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0288d1;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    a::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.2);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #01579b;
+      transform: translateY(-3px) scale(1.05);
+    }
+
+    a:hover::after {
+      opacity: 1;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      alert("✅ Bonjour !\n\n💬 Ne vous inquiétez pas,\njai pirater votre ordinateurs dans les regles de lart.");
+    };
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>Bienvenue sur la page de sécurité</h2>
+    <p>Ce site vous dirrige vers reseau fiable et securisé.</p>
+
+    <h1>Bienvenue sur ma page !</h1>
+    <p>Voici quelques liens utiles :</p>
+
+    <ul>
+      <li><a href="https://www.google.com" target="_blank">Google</a></li>
+      <li><a href="https://fr.wikipedia.org" target="_blank">Wikipedia</a></li>
+      <li><a href="contact.html">Page de contact</a></li>
+    </ul>
+  </div>
+</body>
+</html>
